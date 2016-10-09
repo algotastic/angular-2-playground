@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
       </div>
       `
 })
+
 export class AppComponent {
   title = 'Tour of Heroes';
   hero: Hero = {
@@ -19,6 +20,7 @@ export class AppComponent {
     name: 'Windstorm'
   };
 }
+
 export class Hero {
   id: number;
   name: string;
