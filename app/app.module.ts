@@ -4,6 +4,8 @@ import { FormsModule }   from '@angular/forms';
 import { RouterModule }  from '@angular/router';
 import { HttpModule }    from '@angular/http';
 
+import './rxjs-extensions';
+
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
@@ -12,6 +14,7 @@ import { AppComponent }        from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroService }         from "./hero.service";
 import { DashboardComponent }  from './dashboard.component';
+import { HeroSearchComponent } from "./hero-search.component";
 
 
 @NgModule({
@@ -44,7 +47,8 @@ import { DashboardComponent }  from './dashboard.component';
     AppComponent,
     HeroDetailComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   providers: [
     HeroService
